@@ -1,0 +1,47 @@
+.customers {
+  display: inline-flex;
+  margin: auto;
+
+  &__unit {
+    width: 170px;
+    height: 92px;
+    margin-left: 30px;
+  }
+
+  &__unit:first-child {
+    margin-left: 0;
+  }
+}
+
+.customers__logo {
+  cursor: pointer;
+
+  &--accent {
+    fill: #afb1b8;
+
+    transition-property: fill;
+    @extend %cubic-bezier;
+  }
+}
+
+.customers__link {
+  @extend %flexbox;
+  width: 170px;
+  height: 92px;
+  padding: 0;
+  border: 1px solid rgba(175, 177, 184, 1);
+  border-radius: 4px;
+  background-color: $white-color;
+  transition-property: border-color;
+  @extend %cubic-bezier; 
+
+  &:hover .customers__logo--accent,
+  &:focus .customers__logo--accent {
+    fill: $accent-color;
+  }
+
+  &:hover,
+  &:focus {
+    border-color: $accent-color;
+  }
+}  

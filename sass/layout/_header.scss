@@ -1,0 +1,95 @@
+.header {
+    padding: 0;
+    border-bottom: 1px solid rgba(236, 236, 236, 1);
+  
+   &__container {
+     @extend %flexbox;
+   }
+}
+.nav {
+  display: flex;
+  margin-left: 93px;
+
+
+  &__item + &__item {
+    margin-left: 50px;
+  }
+
+  &__link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    color: $title-text-color;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    position: relative;
+  
+    transition-property: color;
+    @extend %cubic-bezier;
+  }
+
+  &__link.current::after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: $accent-color;
+    left: 0;
+    bottom: 0;
+    border-radius: 2px;
+  }
+
+  &__link:hover,
+  &__link:focus {
+    color: $accent-color;
+  }
+
+  &__link.current {
+    color: $accent-color;
+  }
+}
+
+.contacts {
+  display: flex;
+  margin-left: auto;
+
+  &__item + &__item {
+    margin-left: 50px;
+  }
+}
+
+.contacts__link {
+  @extend %flexbox;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  color: $primary-text-color;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+
+  &--hover {
+    fill: #757575;
+  
+    transition-property: fill, color;
+    @extend %cubic-bezier;
+  }
+
+  &--hover:hover,
+  &--hover:focus {
+    fill: #2196f3;
+  }
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.contacts__icon {
+  display: inline-block;
+  margin-right: 10px;
+}

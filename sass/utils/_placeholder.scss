@@ -1,0 +1,20 @@
+%flexbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+%cubic-bezier {
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+%main-title {
+  margin-top: 0;
+  margin-bottom: 50px;
+  color: $title-text-color;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}

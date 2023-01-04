@@ -1,0 +1,70 @@
+.actions {
+  @extend %flexbox;
+  margin-bottom: 30px;
+  width: 206px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.actions__item {
+  display: flex;
+  margin-right: 10px;
+  width: 44px;
+  height: 44px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.actions__network {
+  @extend %flexbox;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
+
+  &--grey {
+    color: #afb1b8;
+    background-color: $white-color;
+    transition-property: background-color;
+    @extend %cubic-bezier;
+  }
+}
+
+.actions__icon {
+  @extend %flexbox;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.actions__icon--white {
+  fill: #afb1b8;
+
+  transition-property: fill;
+  @extend %cubic-bezier;
+
+  .actions__network:hover &,
+  .actions__network:focus & {
+    fill: $white-color;
+  }
+}
+
+.actions__network--white {
+  fill: #fff;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition-property: background-color;
+  @extend %cubic-bezier;
+}
+
+.actions__network--white:hover,
+.actions__network--white:focus {
+  background-color: $accent-color;
+}

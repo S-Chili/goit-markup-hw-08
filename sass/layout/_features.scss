@@ -1,0 +1,28 @@
+.features {
+  padding-bottom: 0;
+
+  &__list {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__item {
+    width: 270px;
+  }
+
+  &__box {
+    @extend %flexbox;
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+    background-color: $tittle-background-color;
+  }
+
+  &__svg {
+    width: 70px;
+    height: 70px;
+  }
+}

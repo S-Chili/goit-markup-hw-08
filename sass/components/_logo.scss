@@ -1,0 +1,34 @@
+.logotype {
+  display: block;
+  width: 145px;
+  text-decoration: none;
+  margin: 0;
+  color: $accent-color;
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+
+.logotype__text {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+
+  &--black {
+    color: black;
+  }
+
+  &--white {
+    color: $white-color;
+  }
+}
+
+.logotype--lower {
+  margin-bottom: 20px;
+}
+
+.for-logotype {
+  width: 145px;
+}
