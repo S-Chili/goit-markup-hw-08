@@ -59,7 +59,22 @@
 }
 
 .section__title {
-  @extend %main-title;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.18;
+  color: #212121;
+  margin-bottom: 30px;
+  margin-top: 0;
+  text-align: center;
+
+  @media screen and (min-width: $desktop) {
+    margin-top: 0;
+    margin-bottom: 50px;
+    color: $title-text-color;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+  }
 }
 
 .examples__texts {

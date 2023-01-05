@@ -34,16 +34,6 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.section__title {
-  margin-top: 0;
-  margin-bottom: 50px;
-  color: #212121;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-}
-
 .page {
   color: #757575;
   background-color: #ffffff;
@@ -172,6 +162,7 @@
   padding: 0;
   border: none;
   border-radius: 50%;
+  justify-content: center;
 }
 .actions__network:hover, .actions__network:focus {
   background-color: #2196f3;
@@ -262,6 +253,26 @@
 @media screen and (min-width: 1200px) {
   .features__subtitle {
     text-align: start;
+  }
+}
+
+.section__title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.18;
+  color: #212121;
+  margin-bottom: 30px;
+  margin-top: 0;
+  text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .section__title {
+    margin-top: 0;
+    margin-bottom: 50px;
+    color: #212121;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
   }
 }
 

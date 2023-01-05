@@ -24,6 +24,11 @@
   padding: 0;
   border: none;
   border-radius: 50%;
+  justify-content: center;
+
+  @media screen and (min-width: $desktop) {
+    
+  }
 
   &:hover,
   &:focus {
