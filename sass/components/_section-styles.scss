@@ -13,13 +13,12 @@
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  max-width: 767px;
 
   @media screen and (min-width: $tablet) {
-    min-width: $tablet;
+    min-width: 738px;
   }
 
   @media screen and (min-width: $desktop) {
-    width: $desktop;
+    width: 1170px;
   }
 }

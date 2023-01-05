@@ -4,18 +4,36 @@
   
    &__container {
      @extend %flexbox;
+     min-height: 60px;
+
+     @media screen and (min-width: $tablet) {
+      height: 80px;
+    }
    }
 }
+
 .nav {
   display: none;
-  
+
   @media screen and (min-width: $tablet) {
+    display: flex;
+    margin-left: 87px;
+  }
+
+  @media screen and (min-width: $desktop) {
     display: flex;
     margin-left: 93px;
   }
-  
+
   &__item + &__item {
-    margin-left: 50px;
+
+    @media screen and (min-width: $tablet) {
+      margin-left: 50px;
+    }
+  
+    @media screen and (min-width: $desktop) {
+      margin-left: 50px;
+    }
   }
 
   &__link {
@@ -56,16 +74,46 @@
 }
 
 .contacts {
-  display: flex;
-  margin-left: auto;
+  display: none;
+
+  @media screen and (min-width: $tablet) {
+    display: block;
+    margin-left: auto;
+  }
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+  }
 
   &__item + &__item {
-    margin-left: 50px;
+
+    @media screen and (min-width: $tablet) {
+      display: block;
+    }
+  
+    @media screen and (min-width: $desktop) {
+      display: flex;
+      margin-left: 50px;
+    }
   }
 }
 
 .contacts__link {
   @extend %flexbox;
+
+  @media screen and (min-width: $tablet) {
+    display: block;
+    padding-bottom: 10px;
+    color: $primary-text-color;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+  }
+
+  @media screen and (min-width: $desktop) {
   padding-top: 32px;
   padding-bottom: 32px;
   color: $primary-text-color;
@@ -73,6 +121,7 @@
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+  }
 
   &--hover {
     fill: #757575;
@@ -95,4 +144,34 @@
 .contacts__icon {
   display: inline-block;
   margin-right: 10px;
+}
+
+.header__btn {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
+
+  @media screen and (min-width: $desktop) {
+    display: none;
+  }
+
+}
+
+.header__icon {
+  display: inline-block;
+  width: 24px;
+  height: 16px;
 }
