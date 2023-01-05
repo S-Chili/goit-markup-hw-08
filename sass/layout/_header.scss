@@ -7,10 +7,13 @@
    }
 }
 .nav {
-  display: flex;
-  margin-left: 93px;
-
-
+  display: none;
+  
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    margin-left: 93px;
+  }
+  
   &__item + &__item {
     margin-left: 50px;
   }
