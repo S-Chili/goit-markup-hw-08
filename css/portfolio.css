@@ -251,12 +251,18 @@
 }
 
 .features__subtitle {
+  text-align: center;
   margin-top: 0;
   margin-bottom: 10px;
   color: #212121;
   font-size: 14px;
   line-height: 1.14;
   font-weight: 700;
+}
+@media screen and (min-width: 1200px) {
+  .features__subtitle {
+    text-align: start;
+  }
 }
 
 .examples__texts {
