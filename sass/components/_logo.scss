@@ -9,15 +9,8 @@
   font-size: 24px;
   line-height: 1.16;
 
-  @media screen and (min-width: $tablet) {
-
-  }
-
   @media screen and (min-width: $desktop) {
-    display: block;
     width: 145px;
-    text-decoration: none;
-    margin: 0;
     font-size: 26px;
     line-height: 1.19;
   }
@@ -26,8 +19,14 @@
 .logotype__text {
   font-family: Raleway;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.16;
+
+  @media screen and (min-width: $desktop) {
+    width: 145px;
+    font-size: 26px;
+    line-height: 1.19;
+  }
 
   &--black {
     color: black;

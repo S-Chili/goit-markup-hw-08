@@ -1,9 +1,9 @@
 .button {
   border: none;
   border-radius: 4px;
-  padding: 10px 32px;
+  padding: 10px 24px;
   color: $white-color;
-  min-width: 216px;
+  min-width: 200px;
   height: 50px;
   background-color: $accent-color;
   font-family: inherit;
@@ -11,4 +11,9 @@
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
+
+  @media screen and (min-width: $desktop) {
+    min-width: 216px;
+    padding: 10px 32px;
+  }
 }
