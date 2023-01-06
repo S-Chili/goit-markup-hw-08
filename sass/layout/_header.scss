@@ -116,6 +116,9 @@
     line-height: 1.16;
     letter-spacing: 0.02em;
     text-decoration: none;
+    &--petty {
+      padding-bottom: 0;
+    }
   }
 
   @media screen and (min-width: $desktop) {
@@ -144,10 +147,6 @@
   &:hover,
   &:focus {
     color: $accent-color;
-  }
-
-  &--petty {
-    padding-bottom: 0;
   }
 }
 

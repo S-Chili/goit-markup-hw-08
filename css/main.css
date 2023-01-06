@@ -439,6 +439,9 @@
     letter-spacing: 0.02em;
     text-decoration: none;
   }
+  .contacts__link--petty {
+    padding-bottom: 0;
+  }
 }
 @media screen and (min-width: 1200px) {
   .contacts__link {
@@ -461,9 +464,6 @@
 }
 .contacts__link:hover, .contacts__link:focus {
   color: #2196f3;
-}
-.contacts__link--petty {
-  padding-bottom: 0;
 }
 
 .contacts__icon {
@@ -876,13 +876,15 @@
   display: inline-flex;
   margin: auto;
 }
-.customers__unit {
-  width: 170px;
-  height: 92px;
-  margin-left: 30px;
-}
-.customers__unit:first-child {
-  margin-left: 0;
+@media screen and (min-width: 1200px) {
+  .customers__unit {
+    width: 170px;
+    height: 92px;
+    margin-left: 30px;
+  }
+  .customers__unit:first-child {
+    margin-left: 0;
+  }
 }
 
 .customers__logo {
