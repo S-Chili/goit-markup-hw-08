@@ -419,11 +419,6 @@
     margin-left: auto;
   }
 }
-@media screen and (min-width: 768px) {
-  .contacts__item + .contacts__item {
-    display: block;
-  }
-}
 @media screen and (min-width: 1200px) {
   .contacts__item + .contacts__item {
     display: flex;
@@ -433,7 +428,9 @@
 
 @media screen and (min-width: 768px) {
   .contacts__link {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
     padding-bottom: 10px;
     color: #757575;
     font-weight: 500;
@@ -445,6 +442,9 @@
 }
 @media screen and (min-width: 1200px) {
   .contacts__link {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
     padding-top: 32px;
     padding-bottom: 32px;
     font-weight: 500;
@@ -461,6 +461,9 @@
 }
 .contacts__link:hover, .contacts__link:focus {
   color: #2196f3;
+}
+.contacts__link--petty {
+  padding-bottom: 0;
 }
 
 .contacts__icon {
