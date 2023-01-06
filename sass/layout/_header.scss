@@ -88,12 +88,6 @@
   }
 
   &__item + &__item {
-
-    // @media screen and (min-width: $tablet) {
-    //   display: flex;
-    //   justify-content: center;
-    //   align-items: center;
-    // }
   
     @media screen and (min-width: $desktop) {
       display: flex;
@@ -116,21 +110,22 @@
     line-height: 1.16;
     letter-spacing: 0.02em;
     text-decoration: none;
+    
     &--petty {
       padding-bottom: 0;
     }
   }
 
-  @media screen and (min-width: $desktop) {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  }
+    @media screen and (min-width: $desktop) {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    }
 
   &--hover {
     fill: #757575;

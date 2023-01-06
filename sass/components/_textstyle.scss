@@ -125,13 +125,32 @@
 }
 
 .subscribe {
-  margin-left: 70px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: $tablet) {}
+
+  @media screen and (min-width: $tablet) {
+    margin-left: 70px;
+  }
+
 }
 
 .subscribe__texts {
   margin: 0;
   margin-bottom: 20px;
+  margin-top: 60px;
   color: $white-color;
   font-weight: 700;
   text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+
+    @media screen and (min-width: $tablet) {}
+
+    @media screen and (min-width: $tablet) {
+      margin-top: 0;
+    }
+
+
 }
