@@ -9,6 +9,7 @@
 
 .examples {
   @extend %flexbox;
+  min-width: 1170px;
   flex-wrap: wrap;
   justify-content: space-between;
 
