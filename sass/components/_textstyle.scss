@@ -31,12 +31,18 @@
 
 .modal__title {
   @extend %flexbox;
-  height: 23px;
+  height: 60px;
   font-weight: 700;
   line-height: 1.15;
   font-size: 20px;
   text-align: center;
   color: #212121;
+  width: 370px;
+
+  @media screen and (min-width: $desktop) {
+    width: 448px;
+    height: 23px;
+  }
 }
 
 .features__title {
@@ -148,8 +154,9 @@
 
     @media screen and (min-width: $tablet) {}
 
-    @media screen and (min-width: $tablet) {
+    @media screen and (min-width: $desktop) {
       margin-top: 0;
+      justify-content: left;
     }
 
 

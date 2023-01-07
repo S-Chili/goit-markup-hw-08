@@ -161,13 +161,15 @@
   @extend %flexbox;
   width: 200px;
   margin-top: 30px;
-  
+  padding: 10px 28px 10px 31px;
+
   @media screen and (min-width: $tablet) {
     margin-top: 20px;
   }
 
   @media screen and (min-width: $desktop) {
     width: 200px;
+    padding: 10px 32px;
     margin-top: 0;
   }
 }
@@ -176,7 +178,15 @@
   @extend %flexbox;
   width: 24px;
   height: 23px;
-  margin-left: 10px;
+  margin-left: 12px;
+
+  @media screen and (min-width: $tablet) {
+    margin-left: 12px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-left: 10px;
+  }
 }
 
 .footer__card {
