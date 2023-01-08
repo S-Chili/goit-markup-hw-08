@@ -127,6 +127,7 @@
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+  min-width: 450px;
 }
 @media screen and (min-width: 768px) {
   .container {
@@ -646,13 +647,17 @@
   align-items: center;
   flex-wrap: nowrap;
   flex-direction: column;
-  width: 450px;
+  min-width: 450px;
+  margin-right: auto;
+  margin-left: auto;
   justify-content: center;
 }
 @media screen and (min-width: 768px) {
   .footer__box {
     flex-wrap: wrap;
-    width: 100%;
+    width: 738px;
+    margin-right: auto;
+    margin-left: auto;
     flex-direction: inherit;
     align-items: baseline;
   }
@@ -663,6 +668,9 @@
     align-items: baseline;
     flex-wrap: nowrap;
     flex-direction: row;
+    width: 1170px;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 .footer__address {

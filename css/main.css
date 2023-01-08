@@ -127,6 +127,7 @@
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+  min-width: 450px;
 }
 @media screen and (min-width: 768px) {
   .container {
@@ -770,6 +771,9 @@
 .features__list {
   display: flex;
   flex-wrap: wrap;
+  width: 450px;
+  margin-right: auto;
+  margin-left: auto;
 }
 @media screen and (min-width: 768px) {
   .features__list {
@@ -786,6 +790,8 @@
     align-items: baseline;
     justify-content: space-between;
     width: 1170px;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 .features__item {
@@ -885,6 +891,9 @@
   align-items: center;
   flex-wrap: wrap;
   justify-content: space-between;
+  width: 450px;
+  margin-right: auto;
+  margin-left: auto;
 }
 @media screen and (min-width: 768px) {
   .stuff__list {
@@ -930,8 +939,9 @@
 .customers {
   display: flex;
   flex-wrap: wrap;
-  min-width: 450px;
-  margin: 0;
+  width: 450px;
+  margin-right: auto;
+  margin-left: auto;
   justify-content: center;
 }
 .customers__unit {
@@ -945,8 +955,9 @@
 }
 @media screen and (min-width: 768px) {
   .customers {
-    min-width: 738px;
-    margin: 0;
+    width: 738px;
+    margin-right: auto;
+    margin-left: auto;
     justify-content: center;
   }
   .customers__unit {
@@ -1029,13 +1040,17 @@
   align-items: center;
   flex-wrap: nowrap;
   flex-direction: column;
-  width: 450px;
+  min-width: 450px;
+  margin-right: auto;
+  margin-left: auto;
   justify-content: center;
 }
 @media screen and (min-width: 768px) {
   .footer__box {
     flex-wrap: wrap;
-    width: 100%;
+    width: 738px;
+    margin-right: auto;
+    margin-left: auto;
     flex-direction: inherit;
     align-items: baseline;
   }
@@ -1046,6 +1061,9 @@
     align-items: baseline;
     flex-wrap: nowrap;
     flex-direction: row;
+    width: 1170px;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 .footer__address {
