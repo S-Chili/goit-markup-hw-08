@@ -2,7 +2,7 @@
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
-  width: 360px;
+  width: 100%;
   color: $white-color;
   font-weight: 900;
   font-size: 26px;
@@ -11,11 +11,11 @@
   text-transform: uppercase;
 
   @media screen and (min-width: $tablet) {
-     
+    width: 360px;
   }
 
   @media screen and (min-width: $desktop) {
-    ont-weight: 900;
+    font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
     width: 696px;
@@ -37,7 +37,8 @@
   font-size: 20px;
   text-align: center;
   color: #212121;
-  width: 370px;
+  // width: 370px;
+
 
   @media screen and (min-width: $desktop) {
     width: 448px;
@@ -59,7 +60,7 @@
   line-height: 1.14;
   font-weight: 700;
 
-  @media screen and (min-width: $desktop) {
+  @media screen and (min-width: $tablet) {
     text-align: start;
   }
 }

@@ -2,23 +2,24 @@
   background-color: $grey-background;
   padding-top: 60px;
   padding-bottom: 60px;
-  min-width: 450px;
+  width: 100%;
 
   &__box {
     display: flex;
     align-items: center;
     flex-wrap: nowrap;
     flex-direction: column;
-    min-width: 450px;
-    margin-right: auto;
-    margin-left: auto;
+    width: 100%;
+    margin: 0;
     justify-content: center;
+
+    @media screen and (min-width: $mobile) {
+      width: 450px;
+    }
 
     @media screen and (min-width: $tablet) {
       flex-wrap: wrap;
       width: 738px;
-      margin-right: auto;
-      margin-left: auto;
       flex-direction: inherit;
       align-items: baseline
     }
@@ -29,8 +30,6 @@
     flex-wrap: nowrap;
     flex-direction: row;
     width: 1170px;
-    margin-right: auto;
-    margin-left: auto;
     }
   }
 
@@ -61,7 +60,6 @@
     align-items: baseline;
 
   }
-
 }
 
 .address__map {
@@ -107,9 +105,13 @@
 
 .footer-form {
   display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  min-width: 450px;
+  margin: 0;
+  min-width: 100%;
+  justify-content: center;
+
+  @media screen and (min-width: $mobile) {
+    min-width: 450px;
+  }
 
   @media screen and (min-width: $desktop) {
     margin-left: 93px;
@@ -121,9 +123,12 @@
   @extend %flexbox;
   flex-direction: column;
   text-align: center;
-  width: 450px;
+  width: 100%;
   align-items: center;
- 
+
+  @media screen and (min-width: $mobile) {
+  width: 450px;
+  } 
 
   @media screen and (min-width: $desktop) {
     flex-direction: row;
@@ -133,10 +138,9 @@
 }
 
 .footer__input {
-  width: 450px;
+  min-width: 300px;
   height: 48px;
-  margin-right: auto;
-  margin-left: auto;
+  margin: 0;
   padding-left: 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
@@ -148,6 +152,10 @@
     rgba(33, 150, 243, 0)
   );
 
+  @media screen and (min-width: $mobile) {
+    width: 450px;
+  }
+
   @media screen and (min-width: $desktop) {
     width: 358px;
     margin-right: 12px;
@@ -158,15 +166,11 @@
 .button--flex {
   @extend %flexbox;
   width: 200px;
-  margin-top: 30px;
+  margin-top: 20px;
   padding: 10px 28px 10px 31px;
 
-  @media screen and (min-width: $tablet) {
-    margin-top: 20px;
-  }
 
   @media screen and (min-width: $desktop) {
-    width: 200px;
     padding: 10px 32px;
     margin-top: 0;
   }

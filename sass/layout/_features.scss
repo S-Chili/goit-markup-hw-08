@@ -1,29 +1,24 @@
 .features {
   padding-bottom: 0;
-  min-width: 450px;
 
   &__list {
     display: flex;
     flex-wrap: wrap;
-    width: 450px;
-    margin-right: auto;
-    margin-left: auto;
+    width: 100%;
+    margin: 0;
+
+    @media screen and (min-width: $mobile) {
+      width: 450px;
+    }
 
     @media screen and (min-width: $tablet) {
-      flex-wrap: wrap;
       align-items: baseline;
       justify-content: space-between;
       width: 738px;
-      margin-right: auto;
-      margin-left: auto;
     }
 
     @media screen and (min-width: $desktop) {
-      align-items: baseline;
-      justify-content: space-between;
       width: 1170px;
-      margin-right: auto;
-      margin-left: auto;
     }
   }
 
@@ -35,13 +30,12 @@
 
     @media screen and (min-width: $tablet) {
       width: 354px;
-      position: relative;
     }
 
     @media screen and (min-width: $desktop) {
       width: 270px;
+      justify-content: space-between;
     }
-
   }
 
   &__box {
@@ -50,14 +44,6 @@
     margin-bottom: 30px;
     border-radius: 4px;
     background-color: $tittle-background-color;
-
-    @media screen and (min-width: $tablet) {
-      width: 354px;
-    }
-
-    @media screen and (min-width: $desktop) {
-      width: 270px;
-    }
   }
 
   &__svg {
@@ -67,14 +53,11 @@
     left: 43%;
 
     @media screen and (min-width: $tablet) {
-      position: absolute;
       left: 40%;
     }
 
     @media screen and (min-width: $desktop) {
-      position: absolute;
       left: 37%;
     }
-
   }
 }
