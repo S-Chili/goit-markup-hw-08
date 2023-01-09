@@ -527,6 +527,7 @@
 
 .decision {
   height: 400px;
+  min-width: 450px;
   padding-top: 118px;
   padding-bottom: 118px;
   margin-left: auto;
@@ -767,6 +768,7 @@
 
 .features {
   padding-bottom: 0;
+  min-width: 450px;
 }
 .features__list {
   display: flex;
@@ -885,6 +887,7 @@
   margin-bottom: 0;
   padding-top: 94px;
   background-color: #f5f4fa;
+  min-width: 450px;
 }
 .stuff__list {
   display: flex;
@@ -1034,6 +1037,7 @@
   background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
+  min-width: 450px;
 }
 .footer__box {
   display: flex;
