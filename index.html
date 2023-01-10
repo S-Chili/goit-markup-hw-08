@@ -211,7 +211,11 @@
               <div class="examples__card">
                 <img
                   class="examples__img"
-                  src="./images/projectdesign.jpg"
+                  srcset="
+                    ./images/example/img1_exam_sm.jpg 1x,
+                    ./images/example/img1_exam_lg.jpg 2x
+                  "
+                  src="./images/example/img1_exam_sm.jpg"
                   alt="верстка сайту на планшеті та комп'ютері"
                   width="370"
                 />
@@ -224,7 +228,11 @@
               <div class="examples__card">
                 <img
                   class="examples__img"
-                  src="./images/adaptdesign.jpg"
+                  srcset="
+                    ./images/example/img2_exam_sm-1.jpg 1x,
+                    ./images/example/img2_exam_lg-1.jpg 2x
+                  "
+                  src="./images/example/img2_exam_sm-1.jpg"
                   alt="телефон та ноутбук з проєктом дизайну"
                   width="370"
                 />
@@ -237,7 +245,11 @@
               <div class="examples__card">
                 <img
                   class="examples__img"
-                  src="./images/colorscheme.jpg"
+                  srcset="
+                    ./images/example/img_exam_sm-2.jpg 1x,
+                    ./images/example/img_exam_lg-2.jpg 2x
+                  "
+                  src="./images/example/img_exam_sm-2.jpg"
                   alt="планшет з кольоровою гамою"
                   width="370"
                 />
@@ -257,9 +269,18 @@
             <li class="stuff__item">
               <img
                 class="stuff__img"
-                src="./images/productdesigner.jpg"
+                srcset="
+                  ./images/stuff/imgdesksm.jpg  270w,
+                  ./images/stuff/imgtablsm.jpg  354w,
+                  ./images/stuff/imgmobsm.jpg   450w,
+                  ./images/stuff/imgdesklg.jpg  540w,
+                  ./images/stuff/imgtablllg.jpg 708w,
+                  ./images/stuff/imgmoblg.jpg   900w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                src="./images/stuff/imgmobsm.jpg"
                 alt="Чоловік Product Designer"
-                width="270"
+                width="450"
               />
               <h3 class="stuff__unit">Ігор Дем'яненко</h3>
               <p class="stuff__name">Product Designer</p>
@@ -317,9 +338,18 @@
             <li class="stuff__item">
               <img
                 class="stuff__img"
-                src="./images/frontenddeveloper.jpg"
+                srcset="
+                  ./images/stuff/imgdesksm-1.jpg  270w,
+                  ./images/stuff/imgtablsm-1.jpg  354w,
+                  ./images/stuff/imgmobsm-1.jpg   450w,
+                  ./images/stuff/imgdesklg-1.jpg  540w,
+                  ./images/stuff/imgtablllg-1.jpg 708w,
+                  ./images/stuff/imgmoblg-1.jpg   900w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                src="./images/stuff/imgmobsm-1.jpg"
                 alt="Жінка Frontend Developer"
-                width="270"
+                width="450"
               />
               <h3 class="stuff__unit">Ольга Рєпіна</h3>
               <p class="stuff__name">Frontend Developer</p>
@@ -377,9 +407,18 @@
             <li class="stuff__item">
               <img
                 class="stuff__img"
-                src="./images/marketing.jpg"
+                srcset="
+                  ./images/stuff/imgdesksm-2.jpg  270w,
+                  ./images/stuff/imgtablsm-2.jpg  354w,
+                  ./images/stuff/imgmobsm-2.jpg   450w,
+                  ./images/stuff/imgdesklg-2.jpg  540w,
+                  ./images/stuff/imgtablllg-2.jpg 708w,
+                  ./images/stuff/imgmoblg-2.jpg   900w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                src="./images/stuff/imgmobsm-2.jpg"
                 alt="Чоловік Marketing"
-                width="270"
+                width="450"
               />
               <h3 class="stuff__unit">Микола Тарасов</h3>
               <p class="stuff__name">Marketing</p>
@@ -437,9 +476,18 @@
             <li class="stuff__item">
               <img
                 class="stuff__img"
-                src="./images/designer.jpg"
+                srcset="
+                  ./images/stuff/imgdesksm-3.jpg  270w,
+                  ./images/stuff/imgtablsm-3.jpg  354w,
+                  ./images/stuff/imgmobsm-3.jpg   450w,
+                  ./images/stuff/imgdesklg-3.jpg  540w,
+                  ./images/stuff/imgtablllg-3.jpg 708w,
+                  ./images/stuff/imgmoblg-3.jpg   900w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                src="./images/stuff/imgmobsm-3.jpg"
                 alt="Чоловік UI Designer"
-                width="270"
+                width="450"
               />
               <h3 class="stuff__unit">Михайло Єрмаков</h3>
               <p class="stuff__name">UI Designer</p>
@@ -727,7 +775,7 @@
           <a href="./" class="mobile-menu-link link current">Студія</a>
         </li>
         <li class="mobile-menu-item">
-          <a href="./" class="mobile-menu-link link">Портфоліо</a>
+          <a href="./portfolio.html" class="mobile-menu-link link">Портфоліо</a>
         </li>
         <li class="mobile-menu-item">
           <a href="./" class="mobile-menu-link link">Контакти</a>

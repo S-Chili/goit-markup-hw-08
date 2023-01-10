@@ -998,6 +998,8 @@
 }
 .examples__img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 .examples__deskr {
   position: absolute;
@@ -1060,7 +1062,8 @@
 }
 .stuff__img {
   display: block;
-  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
 .customers {
