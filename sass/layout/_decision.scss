@@ -1,21 +1,65 @@
 .decision {
-  height: 400px;
-  width: 100%;
   padding-top: 118px;
   padding-bottom: 118px;
   margin: 0;
   box-sizing: border-box;
   text-align: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  outline: 1px solid #000000;
+
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/newbgr.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  outline: 1px solid #000000;
+    url(../images/bgr/img_bgr_mob_sm.jpg);
+
+  @include mq(retina) {
+    background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/bgr/img_bgr_mob_lg.jpg);
+  }  
+
+  @include mq(tablet) {
+    background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/bgr/img_bgr_tabl_sm.jpg);
+
+    @include mq(retina) {
+      background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/bgr/img_bgr_tabl_lg.jpg);
+    }  
+  }
+
+  @include mq(desktop) {
+    background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/bgr/img_bgr_desk_sm.jpg);
+
+    @include mq(retina) {
+      background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/bgr/img_bgr_desk_lg.jpg);
+    }  
+  }
 
   @media screen and (min-width: $desktop) {
     height: 600px;
