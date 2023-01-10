@@ -14,7 +14,7 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/bgr/img_bgr_mob_sm.jpg);
+    url(../images/bgr/Img_bgr_desk_sm.jpg);
 
   @include mq(retina) {
     background-image: linear-gradient(
@@ -22,7 +22,7 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/bgr/img_bgr_mob_lg.jpg);
+    url(../images/bgr/Img_bgr_desk_lg.jpg);
   }  
 
   @include mq(tablet) {
