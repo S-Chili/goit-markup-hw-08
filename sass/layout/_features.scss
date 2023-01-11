@@ -43,6 +43,7 @@
     height: 120px;
     margin-bottom: 30px;
     border-radius: 4px;
+    position: relative;
     background-color: $tittle-background-color;
   }
 
@@ -50,7 +51,7 @@
     width: 70px;
     height: 70px;
     position: absolute;
-    left: 43%;
+    left: 42%;
 
     @media screen and (min-width: $tablet) {
       left: 40%;

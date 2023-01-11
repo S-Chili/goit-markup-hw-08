@@ -960,13 +960,14 @@
   height: 120px;
   margin-bottom: 30px;
   border-radius: 4px;
+  position: relative;
   background-color: #f5f4fa;
 }
 .features__svg {
   width: 70px;
   height: 70px;
   position: absolute;
-  left: 43%;
+  left: 42%;
 }
 @media screen and (min-width: 768px) {
   .features__svg {
