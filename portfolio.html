@@ -28,8 +28,12 @@
                 >Studio</span
               >
             </a>
-            <button type="button" class="header__btn">
-              <svg class="header__icon">
+            <button
+              class="menu-toggle js-open-menu"
+              aria-expanded="false"
+              aria-controls="mobile-menu-port"
+            >
+              <svg width="24" height="16">
                 <use href="./images/symbol-defs.svg#icon-menubtn"></use>
               </svg>
             </button>
@@ -108,7 +112,6 @@
                     class="apps__block"
                     src="./images/laptopteam.jpg"
                     alt="laptop with picture of the team"
-                    width="370"
                   />
                   <div class="apps__overlay">
                     <p>
@@ -137,7 +140,6 @@
                     class="apps__block"
                     src="./images/basketballplayers.jpg"
                     alt="basketball players"
-                    width="370"
                   />
                   <div class="apps__overlay">
                     <p>
@@ -168,7 +170,6 @@
                     class="apps__block"
                     src="./images/fishtitle.jpg"
                     alt="fish and title"
-                    width="370"
                   />
                   <div class="apps__overlay">
                     <p>
@@ -197,7 +198,6 @@
                     class="apps__block"
                     src="./images/headphone.jpg"
                     alt="headphone"
-                    width="370"
                   />
                   <div class="apps__overlay">
                     <p>
@@ -226,7 +226,6 @@
                     class="apps__block"
                     src="./images/twoboxies.jpg"
                     alt="twoboxies"
-                    width="370"
                   />
                   <div class="apps__overlay">
                     <p>
@@ -255,7 +254,6 @@
                     class="apps__block"
                     src="./images/laptopwithmaponthescreen.jpg"
                     alt="laptop with a map on the screen"
-                    width="370"
                   />
                   <div class="apps__overlay">
                     <p>
@@ -284,7 +282,6 @@
                     class="apps__block"
                     src="./images/picturebook.jpg"
                     alt="a picture book"
-                    width="370"
                   />
                   <div class="apps__overlay">
                     <p>
@@ -313,7 +310,6 @@
                     class="apps__block"
                     src="./images/whitekeyring.jpg"
                     alt="white key ring"
-                    width="370"
                   />
                   <div class="apps__overlay">
                     <p>
@@ -342,7 +338,6 @@
                     class="apps__block"
                     src="./images/laptopwithbusinessadvertisement.jpg"
                     alt="laptop with business advertisement"
-                    width="370"
                   />
                   <div class="apps__overlay">
                     <p>
@@ -474,7 +469,64 @@
           </div>
         </div>
       </div>
-      ?
     </footer>
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg class="menu-cls-btn">
+          <use href="./images/symbol-defs.svg#icon-mobile_closebtn"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu-port list">
+        <li class="mobile-menu-item">
+          <a href="./" class="mobile-menu-link link">Студія</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a href="./portfolio.html" class="mobile-menu-link link current"
+            >Портфоліо</a
+          >
+        </li>
+        <li class="mobile-menu-item">
+          <a href="./" class="mobile-menu-link link">Контакти</a>
+        </li>
+      </ul>
+
+      <ul class="mobile-contacts list">
+        <li class="mobile-contacts-item">
+          <a href="tel:+380961111111" class="mobile-contacts-link link current"
+            >+38 096 111 11 11</a
+          >
+        </li>
+        <li class="mobile-contacts-item">
+          <a href="mailto:info@devstudio.com" class="mobile-contacts-link link"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
+
+      <ul class="mobile-social list">
+        <li class="mobile-social-item">
+          <a href="./" class="mobile-social-link link">Instagram</a>
+        </li>
+        <li class="mobile-social-item">
+          <a href="./" class="mobile-social-link link">Twitter</a>
+        </li>
+        <li class="mobile-social-item">
+          <a href="./" class="mobile-social-link link">Facebook</a>
+        </li>
+        <li class="mobile-social-item">
+          <a href="./" class="mobile-social-link link">LinkedIn</a>
+        </li>
+      </ul>
+    </div>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>
